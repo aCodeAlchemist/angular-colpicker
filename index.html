@@ -1,0 +1,93 @@
+<html>
+	<head>
+		<title>Omni Star Widget Layout</title>
+
+		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+		<style type="text/css">
+			body,p,h2,li,button {
+				font-family: 'Open Sans', sans-serif;
+			}
+
+			/* Sticky footer styles
+				-------------------------------------------------- */
+			html {
+			  position: relative;
+			  min-height: 100%;
+			}
+			body {
+			  /* Margin bottom by footer height */
+			  margin-bottom: 60px;
+			}
+
+			.footer {
+			  position: absolute;
+			  bottom: 0;
+			  width: 100%;
+			  /* Set the fixed height of the footer here */
+			  height: 60px;
+			  background-color: #f5f5f5;
+			}
+
+
+			/* Custom page CSS
+			-------------------------------------------------- */
+			/* Not required for template or sticky footer method. */
+
+			body > .container {
+			  padding: 0px 15px 0;
+			}
+			.container .text-muted {
+			  margin: 20px 0;
+			}
+
+			.footer > .container {
+			  padding-right: 15px;
+			  padding-left: 15px;
+			}
+
+			code {
+			  font-size: 80%;
+			}
+		</style>
+		
+		<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+
+		<!-- jquery colpick libs -->
+		<link rel="stylesheet" type="text/css" href="jquery-colpick/css/colpick.css">
+		<script type="text/javascript" src="jquery-colpick/js/colpick.js"></script>
+
+		<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+		
+		<script type="text/javascript" src="angular-colpick.js"></script>
+
+		<script type="text/javascript" src="app.js"></script>
+
+	</head>
+	<body>
+		<div class="container" ng-app="colPick" ng-controller="colPickCtrl">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="page-header">
+						<h2>Angular Colpicker</h2>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-body" style="word-wrap:break-word">
+							<div class="form-group">
+								<label>Pick a color</label>
+								<input type="text" class="form-control" ng-model="color" colpkr/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<p class="text-muted"><a href="http://github.com/shreejibawa">Jay Shah</a> | <a href="http://www.agileinfoways.com/">AGILE Infoways</a> | 2015</p>
+			</div>
+		</footer>
+	</body>
+</html>

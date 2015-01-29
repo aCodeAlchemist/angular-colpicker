@@ -1,0 +1,14 @@
+{
+  "name": "angular-colpicker",
+  "version": "0.0.0",
+  "description": "angular-colpicker",
+  "main": "index.html",
+  "authors": [
+    "Jay Shah"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": ">=2.3.2",
+    "angular": "~1.3.11"
+  }
+}
