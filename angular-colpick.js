@@ -15,8 +15,9 @@ angular.module('angularColpick', [])
 							submit:0,
 							colorScheme:theme,
 							onChange:function(hsb, hex, rgb, iElement, bySetColor) {
-								if(!bySetColor) scope.ngModel = '#' + hex;
-								scope.$apply();
+								scope.$evalAsync(function () {
+									if(!bySetColor) scope.ngModel = '#' + hex;
+								});
 							}
 						});
 					}
